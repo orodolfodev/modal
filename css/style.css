@@ -1,0 +1,15 @@
+/* Importa a font - Google Fontes */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Variáveis */
+
+:root {
+    --cor-principal: #cb2552;
+    --cor-01: #323946;
+    --cor-02: #cacbd0;
+    --cor-03: #e7e7e7;
+    --cor-04: #f9f9f9;
+    --cor-alpha: #0000007a;
+}
