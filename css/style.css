@@ -13,3 +13,88 @@
     --cor-04: #f9f9f9;
     --cor-alpha: #0000007a;
 }
+
+/* Reset: zerar todas as configurações padrão */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+body{
+    background-color: var(--cor-04);
+    color: var(--cor-01);
+    text-align: center;
+    padding: 3rem;
+}
+
+span{
+    color: var(--cor-principal);
+}
+
+main{
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+}
+
+main > div{
+    max-width: 20rem;
+    height: 24rem;
+    padding: 3rem 1rem;
+    border: solid 0.15rem var(--cor-02);
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.5s ease;
+}
+
+main > div:hover{
+    border-color: var(--cor-principal);
+}
+
+main p{
+    /* Número de linhas */
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+button{
+    padding: 0.7rem 1.8rem;
+    background-color: var(--cor-principal);
+    border-radius: 2rem;
+    color: var(--cor-04);
+    font-size: 1rem;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--cor-01);
+}
+
+/* Modal */
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor-alpha);
+    z-index: 10;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
